@@ -32,7 +32,7 @@ header {
   padding: 2em;
 }
 header .logo {
-  color: #5b5b5b;
+  color: #6e6e6e;
   font-weight: bolder;
 }
 header ul {
@@ -43,13 +43,13 @@ header ul a {
   padding: 0 1em;
 }
 
-/* reposive menu-icon */
+/* reponsive menu-icon */
 .nav-link {
   transition: 0.7s ease;
 }
 
 .nav-link:hover {
-  color: #5b5b5b;
+  color: #6e6e6e;
 }
 
 .hamburger {
@@ -96,4 +96,48 @@ header ul a {
   .nav-menu.active {
     left: 0;
   }
+}
+svg {
+  height: 48px;
+  margin: auto;
+  fill: white;
+  transform: translateY(-8px) rotate(-45deg);
+  display: block;
+}
+
+.welcome {
+  background: #6e6e6e;
+  color: white;
+  display: grid;
+  text-align: center;
+  padding: 4em 3em;
+}
+
+.medium {
+  color: #6e6e6e;
+}
+
+#main {
+  color: #6e6e6e;
+  text-align: center;
+}
+
+.profilePicture {
+  height: 250px;
+  width: auto;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  height: 240px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+}
+
+.feature {
+  padding: 4em 2em;
 }/*# sourceMappingURL=main.css.map */

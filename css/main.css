@@ -131,13 +131,47 @@ svg {
   margin-right: auto;
 }
 
-.image {
+.image-icon {
   height: 240px;
   width: auto;
   display: block;
   margin-left: auto;
+  margin-bottom: 2em;
+  border: solid 3px #54c789;
 }
 
-.feature {
+.project1-container {
   padding: 4em 2em;
+  margin: 1em;
+}
+.project1-container .content {
+  margin: 1em;
+  display: block;
+}
+
+.project2-container {
+  padding: 4em 2em;
+  margin: 1em;
+}
+.project2-container .content {
+  margin: 1em;
+  display: block;
+}
+
+.project3-container {
+  padding: 4em 2em;
+  margin: 1em;
+}
+.project3-container .content {
+  margin: 1em;
+  display: block;
+}
+
+.about-container {
+  padding: 4em 2em;
+}
+
+.project-container {
+  padding: 2em;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=main.css.map */

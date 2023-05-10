@@ -54,14 +54,17 @@ header {
 .nav-link {
     transition: 0.7s ease;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #6e6e6e;
 }
+
 .hamburger {
-   display: none;
-   cursor: pointer; 
+    display: none;
+    cursor: pointer;
 }
-.bar{
+
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -71,23 +74,25 @@ header {
     background-color: white;
 }
 
-@media(max-width:768px){
-    .hamburger{
+@media(max-width:768px) {
+    .hamburger {
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-menu{
-        position:fixed;
+    .nav-menu {
+        position: fixed;
         left: -100%;
         top: 70px;
         gap: 0;
@@ -97,15 +102,17 @@ header {
         text-align: center;
         transition: 0.3s;
     }
-    .nav-item{
+
+    .nav-item {
         margin: 16px 0;
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         left: 0;
     }
 }
 
-svg{
+svg {
     height: 48px;
     margin: auto;
     fill: white;
@@ -113,20 +120,23 @@ svg{
     display: block;
 }
 
-.welcome{
+.welcome {
     background: #6e6e6e;
     color: white;
     display: grid;
     text-align: center;
     padding: 4em 3em;
 }
+
 .medium {
     color: #6e6e6e;
 }
+
 #main {
     color: #6e6e6e;
     text-align: center;
 }
+
 .profilePicture {
     height: 250px;
     width: auto;
@@ -134,7 +144,7 @@ svg{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .image-icon {
@@ -145,38 +155,41 @@ svg{
     margin-bottom: 2em;
     border: solid 3px #54c789;
 }
-.project1-container  {
+
+.project1-container {
     padding: 4em 2em;
     margin: 1em;
 
-    .content{
+    .content {
         margin: 1em;
         display: block;
     }
-    
+
 }
-.project2-container  {
+
+.project2-container {
     padding: 4em 2em;
     margin: 1em;
 
-    .content{
+    .content {
         margin: 1em;
         display: block;
     }
-    
+
 }
-.project3-container  {
-    padding: 4em 2em;
+
+.project3-container {
+    padding: 4em;
     margin: 1em;
 
-    .content{
+    .content {
         margin: 1em;
         display: block;
     }
-    
+
 }
 
-.about-container{
+.about-container {
     padding: 4em 2em;
 }
 
@@ -185,3 +198,23 @@ svg{
     padding: 2em;
     margin-bottom: 1em;
 }
+#social #container {
+    text-align: center;
+  }
+  
+  #social #container ul {
+    float: left;
+  }
+  
+  #social #container ul li {
+    float: left;
+    padding-left: 10px;
+    list-style-type: none;
+    margin-left: 6em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  #major-last {
+    text-align: center;
+  }
+

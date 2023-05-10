@@ -159,7 +159,7 @@ svg {
 }
 
 .project3-container {
-  padding: 4em 2em;
+  padding: 4em;
   margin: 1em;
 }
 .project3-container .content {
@@ -174,4 +174,25 @@ svg {
 .project-container {
   padding: 2em;
   margin-bottom: 1em;
+}
+
+#social #container {
+  text-align: center;
+}
+
+#social #container ul {
+  float: left;
+}
+
+#social #container ul li {
+  float: left;
+  padding-left: 10px;
+  list-style-type: none;
+  margin-left: 6em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#major-last {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

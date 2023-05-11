@@ -198,23 +198,36 @@ svg {
     padding: 2em;
     margin-bottom: 1em;
 }
-#social #container {
-    text-align: center;
-  }
-  
-  #social #container ul {
-    float: left;
-  }
-  
-  #social #container ul li {
-    float: left;
-    padding-left: 10px;
-    list-style-type: none;
-    margin-left: 6em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  #major-last {
-    text-align: center;
-  }
 
+#social #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a {
+    color: #fff;
+}
+.socials a:hover {
+    font-size: 2.1rem;
+    color: #6e6e6e;
+}
+
+
+
+#footer {
+    background: #54c789;
+    color: white;
+}

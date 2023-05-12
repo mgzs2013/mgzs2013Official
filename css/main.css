@@ -159,7 +159,7 @@ svg {
 }
 
 .project3-container {
-  padding: 4em;
+  padding: 4em 2em;
   margin: 1em;
 }
 .project3-container .content {
@@ -207,4 +207,12 @@ svg {
 #footer {
   background: #54c789;
   color: white;
+}
+#footer h2 {
+  padding: 1em;
+}
+
+#footer form input[type=submit] {
+  background-color: #6e6e6e;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

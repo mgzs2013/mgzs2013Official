@@ -120,6 +120,7 @@ svg {
 #main {
   color: #6e6e6e;
   text-align: center;
+  padding-top: 3em;
 }
 
 .profilePicture {
@@ -242,4 +243,47 @@ svg {
 #figmaElement5 {
   margin-top: -7px;
   margin-bottom: -8px;
+}
+
+#welcomeDiv {
+  background: #6e6e6e;
+  color: #fff;
+  padding: 35px 3em;
+}
+#welcomeDiv .welcomeSec1 {
+  padding-bottom: 10px;
+}
+#welcomeDiv .welcomeSec2 {
+  padding-bottom: 10px;
+}
+
+#welcomeDiv .welcomeSec2 svg {
+  width: 100px;
+  display: block;
+  float: left;
+  padding-top: 10em;
+  padding-left: -1em;
+  padding-bottom: 6em;
+  padding-right: 2.5em;
+}
+#welcomeDiv .welcomeSec2 h3 {
+  display: flex;
+  width: 100px;
+  padding: 2.5em;
+}
+
+#welcomeDiv .welcomeSec1 svg {
+  width: 100px;
+  display: block;
+  float: right;
+  padding-top: 10em;
+  padding-left: -1em;
+  padding-bottom: 6em;
+  padding-right: 2.5em;
+}
+#welcomeDiv .welcomeSec1 h3 {
+  display: flex;
+  float: right;
+  width: 100px;
+  padding: 2.5em;
 }/*# sourceMappingURL=main.css.map */

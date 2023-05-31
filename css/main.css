@@ -232,19 +232,6 @@ svg {
   margin: 0;
 }
 
-#figmaElement2 {
-  margin-top: -35px;
-}
-
-#figmaElement4 {
-  margin-top: -5px;
-}
-
-#figmaElement5 {
-  margin-top: -7px;
-  margin-bottom: -8px;
-}
-
 #welcomeDiv {
   background: #6e6e6e;
   color: #fff;
@@ -257,33 +244,62 @@ svg {
   padding-bottom: 10px;
 }
 
+#welcomeDiv {
+  display: inline-block;
+}
+#welcomeDiv .welcomeSec1 {
+  border: #fff 1px solid;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+#welcomeDiv .welcomeSec1 .percent {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  padding: 1rem 1rem;
+  border: #fff 2px solid;
+}
+#welcomeDiv .welcomeSec1 h3 {
+  font-size: 1.5em;
+  width: 50%;
+  padding: 0.5em;
+  margin-right: 140px;
+  margin-left: -40px;
+}
+#welcomeDiv .welcomeSec1 svg {
+  width: 50px;
+  float: right;
+  margin-bottom: -190px;
+  margin-top: 3.8rem;
+}
+
+#welcomeDiv .welcomeSec2 {
+  border: #fff 1px solid;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+#welcomeDiv .welcomeSec2 .percent {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  padding: 1rem 1rem;
+  border: #fff 2px solid;
+}
 #welcomeDiv .welcomeSec2 svg {
-  width: 100px;
+  width: 50px;
   display: block;
   float: left;
-  padding-top: 10em;
-  padding-left: -1em;
-  padding-bottom: 6em;
+  padding-top: 2rem;
+  padding-left: -1rem;
+  padding-bottom: -50px;
   padding-right: 2.5em;
 }
 #welcomeDiv .welcomeSec2 h3 {
   display: flex;
-  width: 100px;
+  width: 150px;
   padding: 2.5em;
-}
-
-#welcomeDiv .welcomeSec1 svg {
-  width: 100px;
-  display: block;
-  float: right;
-  padding-top: 10em;
-  padding-left: -1em;
-  padding-bottom: 6em;
-  padding-right: 2.5em;
-}
-#welcomeDiv .welcomeSec1 h3 {
-  display: flex;
-  float: right;
-  width: 100px;
-  padding: 2.5em;
+  margin-right: -82px;
+  margin-top: -25px;
 }/*# sourceMappingURL=main.css.map */

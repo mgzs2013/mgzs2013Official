@@ -214,14 +214,17 @@ svg {
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
-    
+
 }
-.socials li{
+
+.socials li {
     margin: 0 10px;
 }
+
 .socials a {
     color: #fff;
 }
+
 .socials a:hover {
     font-size: 2.1rem;
     color: #6e6e6e;
@@ -235,14 +238,14 @@ svg {
     margin-top: 0px;
     padding: 0;
 
-    h2{
+    h2 {
         padding: 1em;
     }
 }
 
 #footer {
-    form{
-        input[type=submit]{
+    form {
+        input[type=submit] {
             background-color: #6e6e6e;
             color: #fff;
         }
@@ -254,18 +257,19 @@ svg {
         padding: 0;
         margin: 0;
     }
-  margin-bottom: -30px;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  display: block;
+
+    margin-bottom: -30px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
 }
 
 // #figmaElement2 {
 //     margin-top: -35px;
 // }
 // #figmaElement3 {
-    
+
 // }
 // #figmaElement4 {
 //     margin-top: -5px;
@@ -276,14 +280,15 @@ svg {
 // }
 
 #welcomeDiv {
-background: #6e6e6e;
-color: #fff;
-padding: 35px 3em;
+    background: #6e6e6e;
+    color: #fff;
+    padding: 35px 3em;
 
     .welcomeSec1 {
         padding-bottom: 10px;
     }
-    .welcomeSec2{
+
+    .welcomeSec2 {
         padding-bottom: 10px;
     }
 }
@@ -291,53 +296,61 @@ padding: 35px 3em;
 #welcomeDiv {
 
     display: inline-block;
-    .welcomeSec1{
+
+    .welcomeSec1 {
         border: #fff 1px solid;
         margin: 1rem;
         padding: 2rem 2rem;
         text-align: center;
-        .percent{
+
+        .percent {
             vertical-align: middle;
             display: inline-block;
             height: 100%;
             padding: 1rem 1rem;
             border: #fff 2px solid;
         }
+
         h3 {
             font-size: 1.5em;
             width: 50%;
             padding: .5em;
             margin-right: 140px;
             margin-left: -40px;
-            
 
-           
+
+
         }
-        svg{
-            
+
+        svg {
+
             width: 50px;
             float: right;
             margin-bottom: -190px;
             margin-top: 3.8rem;
+            transform: rotate(0deg);
+            display: block;
         }
-           
+
     }
 }
 
 #welcomeDiv {
-    .welcomeSec2{
+    .welcomeSec2 {
         border: #fff 1px solid;
         margin: 1rem;
         padding: 2rem 2rem;
         text-align: center;
-        .percent{
+
+        .percent {
             vertical-align: middle;
             display: inline-block;
             height: 100%;
             padding: 1rem 1rem;
             border: #fff 2px solid;
         }
-        svg{ 
+
+        svg {
             width: 50px;
             display: block;
             float: left;
@@ -345,13 +358,25 @@ padding: 35px 3em;
             padding-left: -1rem;
             padding-bottom: -50px;
             padding-right: 2.5em;
+            transform: rotate(0deg);
+            display: block;
         }
+
         h3 {
             display: flex;
-            width: 150px;
+            width: 160px;
             padding: 2.5em;
             margin-right: -82px;
             margin-top: -25px;
         }
     }
+}
+
+#welcomeDiv {
+    .welcomeSec3 {
+        h3 {
+            margin-left: 125px;
+        }
+    }
+
 }

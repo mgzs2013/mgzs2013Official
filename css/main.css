@@ -272,6 +272,8 @@ svg {
   float: right;
   margin-bottom: -190px;
   margin-top: 3.8rem;
+  transform: rotate(0deg);
+  display: block;
 }
 
 #welcomeDiv .welcomeSec2 {
@@ -295,11 +297,17 @@ svg {
   padding-left: -1rem;
   padding-bottom: -50px;
   padding-right: 2.5em;
+  transform: rotate(0deg);
+  display: block;
 }
 #welcomeDiv .welcomeSec2 h3 {
   display: flex;
-  width: 150px;
+  width: 160px;
   padding: 2.5em;
   margin-right: -82px;
   margin-top: -25px;
+}
+
+#welcomeDiv .welcomeSec3 h3 {
+  margin-left: 125px;
 }/*# sourceMappingURL=main.css.map */

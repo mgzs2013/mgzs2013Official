@@ -235,6 +235,7 @@ svg {
 #welcomeDiv {
   background: #6e6e6e;
   color: #fff;
+  width: 100%;
 }
 #welcomeDiv .welcomeSec1 {
   padding-bottom: 10px;

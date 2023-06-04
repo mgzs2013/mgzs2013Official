@@ -380,3 +380,23 @@ svg {
     }
 
 }
+
+#figmaPlusImage {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#figmaPlusImage{
+    #imageElement{
+        position: relative;
+        top: 0;
+        left: 0;
+        border: 1px #54c789 solid;
+
+    }
+    #figmaElement{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}

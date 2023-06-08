@@ -17,10 +17,10 @@
             <a href="index.html" class="logo">mgzs2013</a>
             <nav>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">My Pojects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">My Resume</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Direct Message me</a></li>
+                    <li class="nav-item"><a href="#about-container" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#project-container" class="nav-link">My Pojects</a></li>
+                    <li class="nav-item"><a href="#imageElement" class="nav-link">My Resume</a></li>
+                    <li class="nav-item"><a href="#contactForm" class="nav-link">Direct Message me</a></li>
                 </ul>
             </nav>
             <!-- responsive design -->
@@ -69,7 +69,7 @@
                 and my millenial persona
             </H2>
         </div>
-        <div class="about-container">
+        <div id="about-container">
             <h1>About me:</h1>
             <img class="profilePicture" src="./images /IMG_3211.jpg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue nulla eget dui placerat, sed
@@ -86,7 +86,7 @@
                 curae; Curabitur dignissim libero et dolor vehicula vestibulum. Nunc nec purus sit amet erat aliquet
                 dictum. Nunc vel accumsan nunc.</p>
         </div>
-        <div class="project-container">
+        <div id="project-container">
             <h1>Featured Projects:</h1>
             <section class="project1-container">
                 <div>
@@ -118,38 +118,39 @@
                     </p>
                 </div>
             </section>
-        </div>
-        <div id="figmaPlusImage">
-            <div id="imageElement"><img src="./images /TempResume1.png"></div>
-        <div id="figmaElement"><img src="./images /Slice-1.png"></div>
+            <div id="figmaPlusImage">
+                <div id="imageElement"><img src="./images /TempResume1.png"></div>
+            </div>
+
 
         </div>
         <div id="footer">
 
-
+            <div id="figmaElement"><img src="./images /Slice-1.png"></div>
             <h2>Let's connect more!</h2>
 
             <p>Direct message me here</p><span>&#128071</span>
-
-            <form method="post" action="https://formsubmit.co/5634e4a663aceb970c70d69afe2342d2">
-                <div class="row">
-                    <div class="col-6 col-12-mobilep">
-                        <input type="text" name="name" placeholder="Name" />
+            <div id="contactForm">
+                <form method="post" action="https://formsubmit.co/5634e4a663aceb970c70d69afe2342d2">
+                    <div class="row">
+                        <div class="col-6 col-12-mobilep">
+                            <input type="text" name="name" placeholder="Name" />
+                        </div>
+                        <div class="col-6 col-12-mobilep">
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" placeholder="Message" rows="6"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <ul class="actions special">
+                                <li><input type="submit" value="Send Message" /></li>
+                            </ul>
+                            <input type="hidden" name="_next" value="https://mgzs2013.github.io/thankyou.html">
+                        </div>
                     </div>
-                    <div class="col-6 col-12-mobilep">
-                        <input type="email" name="email" placeholder="Email" />
-                    </div>
-                    <div class="col-12">
-                        <textarea name="message" placeholder="Message" rows="6"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <ul class="actions special">
-                            <li><input type="submit" value="Send Message" /></li>
-                        </ul>
-                        <input type="hidden" name="_next" value="https://mgzs2013.github.io/thankyou.html">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
             <div id="social">
                 <div id="container">
                     <ul class="socials">

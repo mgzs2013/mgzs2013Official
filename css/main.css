@@ -168,13 +168,28 @@ svg {
   display: block;
 }
 
-.about-container {
+#about-container {
   padding: 4em 2em;
 }
 
-.project-container {
+#project-container {
   padding: 2em;
   margin-bottom: 1em;
+}
+
+#footer {
+  background: #54c789;
+  color: white;
+  margin-top: 0px;
+  padding: 0;
+}
+#footer h2 {
+  padding: 1em;
+}
+
+#footer form input[type=submit] {
+  background-color: #6e6e6e;
+  color: #fff;
 }
 
 #social #container {
@@ -205,31 +220,36 @@ svg {
   color: #6e6e6e;
 }
 
-#footer {
-  background: #54c789;
-  color: white;
-  margin-top: 0px;
-  padding: 0;
+#footer #contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
+
+#footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 #footer h2 {
-  padding: 1em;
-}
-
-#footer form input[type=submit] {
-  background-color: #6e6e6e;
-  color: #fff;
-}
-
-#figmaElement {
-  margin-bottom: -30px;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  display: block;
-}
-#figmaElement img {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 #welcomeDiv {
@@ -248,7 +268,6 @@ svg {
   display: inline-block;
 }
 #welcomeDiv .welcomeSec1 {
-  border: #fff 1px solid;
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
@@ -258,7 +277,6 @@ svg {
   display: inline-block;
   height: 100%;
   padding: 1rem 1rem;
-  border: #fff 2px solid;
 }
 #welcomeDiv .welcomeSec1 h3 {
   font-size: 1.5em;
@@ -277,7 +295,6 @@ svg {
 }
 
 #welcomeDiv .welcomeSec2 {
-  border: #fff 1px solid;
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
@@ -287,7 +304,6 @@ svg {
   display: inline-block;
   height: 100%;
   padding: 1rem 1rem;
-  border: #fff 2px solid;
 }
 #welcomeDiv .welcomeSec2 svg {
   width: 50px;
@@ -312,20 +328,29 @@ svg {
   margin-left: 125px;
 }
 
-#figmaPlusImage {
-  position: relative;
-  top: 0;
+#footer #figmaElement {
+  margin-bottom: -30px;
+  right: 0;
   left: 0;
+  display: block;
+}
+#footer #figmaElement img {
+  padding: 0;
+  margin: 0;
+}
+
+#figmaPlusImage {
+  padding: 2em;
+  margin-bottom: 1em;
 }
 
 #figmaPlusImage #imageElement {
+  height: 240px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  border: solid 3px #54c789;
+  padding: 2em;
+  margin-bottom: -5rem;
   position: relative;
-  top: 0;
-  left: 0;
-  border: 1px #54c789 solid;
-}
-#figmaPlusImage #figmaElement {
-  position: absolute;
-  top: 30px;
-  left: 30px;
 }/*# sourceMappingURL=main.css.map */

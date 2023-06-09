@@ -286,7 +286,7 @@ svg {
   margin-left: -40px;
 }
 #welcomeDiv .welcomeSec1 svg {
-  width: 50px;
+  width: 70px;
   float: right;
   margin-bottom: -190px;
   margin-top: 3.8rem;
@@ -306,7 +306,7 @@ svg {
   padding: 1rem 1rem;
 }
 #welcomeDiv .welcomeSec2 svg {
-  width: 50px;
+  width: 70px;
   display: block;
   float: left;
   padding-top: 2rem;
@@ -318,14 +318,21 @@ svg {
 }
 #welcomeDiv .welcomeSec2 h3 {
   display: flex;
-  width: 160px;
+  width: 170px;
   padding: 2.5em;
   margin-right: -82px;
   margin-top: -25px;
+  font-size: 20px;
 }
 
 #welcomeDiv .welcomeSec3 h3 {
-  margin-left: 125px;
+  margin-left: 100px;
+  font-size: 30px;
+}
+
+#welcomeDiv .welcomeSec3 #inAndOut {
+  margin-left: 150px;
+  font-size: 30px;
 }
 
 #footer #figmaElement {
@@ -351,6 +358,10 @@ svg {
   margin-left: auto;
   border: solid 3px #54c789;
   padding: 2em;
-  margin-bottom: -5rem;
+  margin-bottom: -5.3rem;
   position: relative;
+}
+
+#figmaElement4 {
+  margin-top: -5px;
 }/*# sourceMappingURL=main.css.map */

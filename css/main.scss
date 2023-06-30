@@ -357,7 +357,7 @@ svg {
 
         svg {
 
-            width: 70px;
+            width: 45px;
             float: right;
             margin-bottom: -190px;
             margin-top: 3.8rem;
@@ -384,8 +384,8 @@ svg {
             
         }
 
-        svg {
-            width: 70px;
+        #hammer1 {
+            width: 35px;
             display: block;
             float: left;
             padding-top: 2rem;
@@ -395,12 +395,21 @@ svg {
             transform: rotate(0deg);
             display: block;
         }
+        #hammer2 {
+            width: 35px;
+            float: right;
+            padding-top: 40px;
+            transform: rotate(0deg);
+            padding-right: 10px;
+            padding-bottom: 50px;
+        
+        }
 
         h3 {
             display: flex;
             width: 170px;
             padding: 2.5em;
-            margin-right: -82px;
+            margin-right: 40px;
             margin-top: -25px;
             font-size: 20px;
         }

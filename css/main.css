@@ -155,8 +155,7 @@ header {
 .welcomeSec1 .welcome-icon {
   vertical-align: middle; /* Align vertically with the welcome-title */
   margin-top: 3.5em;
-  margin-right: 10em;
-  float: left;
+  margin-right: 1.7em;
 }
 
 /* For welcomeSec2 */

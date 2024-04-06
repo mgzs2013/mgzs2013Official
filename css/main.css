@@ -101,6 +101,21 @@ header {
   width: 100%;
 }
 
+/* Adjust the positioning of welcome icon in welcomesec2 */
+#welcomeDiv .welcomeSec2 {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  margin: 1rem auto; /* Adjust margin to center horizontally */
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+/* Adjust the positioning of the welcome icons */
+#welcomeDiv .welcomeSec2 svg {
+  margin-left: 0.5rem; /* Adjust margin between welcome title and icon */
+}
+
 .welcomeSec1,
 .welcomeSec2,
 .welcomeSec3 {
@@ -129,6 +144,30 @@ header {
   fill: #666; /* Example fill color */
   width: 30px; /* Example width */
   height: auto; /* Example height */
+}
+
+/* For welcomeSec1 */
+.welcomeSec1 .welcome-title {
+  display: inline-block; /* Display as inline block to allow other elements to be positioned beside it */
+  margin-right: 1em;
+}
+
+.welcomeSec1 .welcome-icon {
+  vertical-align: middle; /* Align vertically with the welcome-title */
+  margin-top: 3.5em;
+  margin-right: 10em;
+  float: left;
+}
+
+/* For welcomeSec2 */
+.welcomeSec2 .welcome-title {
+  display: inline-block; /* Display as inline block to allow other elements to be positioned beside it */
+}
+
+.welcomeSec2 .welcome-icon {
+  display: inline-block; /* Display as inline block to allow other elements to be positioned beside it */
+  vertical-align: middle; /* Align vertically with the welcome-title */
+  margin-top: 4em;
 }
 
 .header {

@@ -286,6 +286,12 @@ header {
   color: #666;
 }
 
+.project1-container .content p,
+.project2-container .content p,
+.project3-container .content p {
+  margin: 0 1em; /* Adjust the margin as needed */
+}
+
 #figmaPlusImage {
   /* Apply the same styling as the project containers */
   display: flex;

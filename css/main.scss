@@ -303,7 +303,16 @@ header {
     font-size: 16px;
     line-height: 1.5;
     color: #666;
+    
 }
+
+.project1-container .content p,
+.project2-container .content p,
+.project3-container .content p {
+    margin: 0 1em; /* Adjust the margin as needed */
+}
+
+
 
 
 

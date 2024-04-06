@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap");
+/* Reset and general styles */
 body {
   height: 100vh;
   margin: 0;
@@ -19,11 +20,10 @@ img {
   width: 100%;
 }
 
+/* Header styles */
 .nav-container {
   background: #54c789;
-}
-.nav-container a {
-  color: white;
+  margin-bottom: 0;
 }
 
 header {
@@ -31,27 +31,23 @@ header {
   justify-content: space-between;
   padding: 2em;
 }
-header .logo {
+
+.logo {
   color: #6e6e6e;
   font-weight: bolder;
 }
-header ul {
+
+.nav-menu {
   display: flex;
 }
-header ul a {
+
+.nav-item a {
   display: block;
   padding: 0 1em;
+  color: white;
 }
 
-/* reponsive menu-icon */
-.nav-link {
-  transition: 0.7s ease;
-}
-
-.nav-link:hover {
-  color: #6e6e6e;
-}
-
+/* Responsive menu-icon */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -89,6 +85,7 @@ header ul a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: 999;
   }
   .nav-item {
     margin: 16px 0;
@@ -97,30 +94,68 @@ header ul a {
     left: 0;
   }
 }
-svg {
-  height: 48px;
-  margin: auto;
-  fill: white;
-  transform: translateY(-8px) rotate(-45deg);
-  display: block;
-}
-
-.welcome {
+/* Welcome section styles */
+#welcomeDiv {
   background: #6e6e6e;
   color: white;
-  display: grid;
-  text-align: center;
-  padding: 4em 3em;
+  width: 100%;
 }
 
-.medium {
-  color: #6e6e6e;
+.welcomeSec1,
+.welcomeSec2,
+.welcomeSec3 {
+  padding-top: 20px;
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+  text-align: center; /* Center text within the container */
 }
 
-#main {
-  color: #6e6e6e;
+.welcomeSec3 h3 {
+  margin-bottom: 0; /* Remove bottom margin to reduce space */
+}
+
+.welcome-title {
+  /* Add your styles for the headers here */
+  font-size: 1.5em; /* Example font size */
+  color: white; /* Example color */
+  margin-top: 10px; /* Example margin */
+  margin-right: 5px;
+  padding: 1.5em;
+}
+
+.welcome-icon {
+  /* Add your styles for the SVG graphics here */
+  fill: #666; /* Example fill color */
+  width: 30px; /* Example width */
+  height: auto; /* Example height */
+}
+
+.header {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Ensure the div covers the entire viewport height */
+}
+
+.container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  text-align: center; /* Center-align the content inside the container */
+}
+
+/* About section styles */
+#about-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  flex-direction: column; /* Stack items vertically */
   text-align: center;
-  padding-top: 3em;
+}
+
+#about-container p {
+  margin: 0 2em; /* Add margin on both sides to center the paragraph */
+  max-width: 600px; /* Optional: Set a maximum width to control the width of the paragraph */
+  margin-bottom: 1.5em;
 }
 
 .profilePicture {
@@ -130,69 +165,125 @@ svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px; /* Add margin underneath the profile picture */
 }
 
-.image-icon {
-  height: 240px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-bottom: 2em;
+/* Project Container Styles */
+/* Project Container Wrapper */
+#project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Individual Project Container Styles */
+.project-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center; /* Aligns the content to the center */
+}
+
+.project1-container,
+.project2-container,
+.project3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2em; /* Add some spacing between project containers */
+}
+
+.project1-container .image-icon,
+.project2-container .image-icon,
+.project3-container .image-icon {
+  display: inline-block;
+  width: 240px; /* Adjust the width as needed */
+  height: 240px; /* Adjust the height as needed */
+  overflow: hidden;
+  border: solid 3px #54c789;
+  margin-bottom: 1em; /* Add some spacing between the image and content */
+}
+
+.project1-container .image-icon img,
+.project2-container .image-icon img,
+.project3-container .image-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project1-container .image-icon {
+  margin-right: 4em; /* Adjust the value as needed */
+}
+
+.project2-container .image-icon {
+  margin-left: 4em; /* Adjust the value as needed */
+}
+
+.project3-container .image-icon {
+  margin-right: 4em; /* Adjust the value as needed */
+}
+
+.project-container .content {
+  margin-top: 10px;
+}
+
+/* Project Container Title */
+.project-container h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Project Container Description */
+.project-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+#figmaPlusImage {
+  /* Apply the same styling as the project containers */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  margin: 0 auto; /* Centers the element horizontally */
+}
+
+#figmaPlusImage #imageElement {
+  /* Apply the same styling as the image containers in the project containers */
+  width: 100px; /* Adjust the width of the container */
+  height: 100px; /* Adjust the height of the container */
+  overflow: hidden; /* Ensure the image does not overflow the container */
   border: solid 3px #54c789;
 }
 
-.project1-container {
-  padding: 4em 2em;
-  margin: 1em;
-}
-.project1-container .content {
-  margin: 1em;
-  display: block;
-}
-
-.project2-container {
-  padding: 4em 2em;
-  margin: 1em;
-}
-.project2-container .content {
-  margin: 1em;
-  display: block;
+#figmaPlusImage #imageElement img {
+  /* Make the image fill the container horizontally */
+  width: 100%;
+  /* Make the image fill the container vertically */
+  height: 100%;
+  /* Ensure the image fills the container while preserving its aspect ratio */
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.project3-container {
-  padding: 4em 2em;
-  margin: 1em;
-}
-.project3-container .content {
-  margin: 1em;
-  display: block;
-}
-
-#about-container {
-  padding: 4em 2em;
-}
-
-#project-container {
-  padding: 2em;
-  margin-bottom: 1em;
-}
-
+/* Footer styles */
 #footer {
   background: #54c789;
   color: white;
   margin-top: 0px;
   padding: 0;
 }
-#footer h2 {
-  padding: 1em;
-}
 
-#footer form input[type=submit] {
-  background-color: #6e6e6e;
-  color: #fff;
-}
-
-#social #container {
+/* Social media icons */
+#social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,7 +311,8 @@ svg {
   color: #6e6e6e;
 }
 
-#footer #contactForm {
+/* Contact form styles */
+#contactForm {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,22 +320,8 @@ svg {
   text-align: center;
 }
 
-#footer p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-#footer span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
+#footer p,
+#footer span,
 #footer h2 {
   display: flex;
   align-items: center;
@@ -252,104 +330,16 @@ svg {
   text-align: center;
 }
 
-#welcomeDiv {
-  background: #6e6e6e;
+#footer form input[type=submit] {
+  background-color: #6e6e6e;
   color: #fff;
-  width: 100%;
-}
-#welcomeDiv .welcomeSec1 {
-  padding-bottom: 10px;
-}
-#welcomeDiv .welcomeSec2 {
-  padding-bottom: 10px;
 }
 
-#welcomeDiv {
-  display: inline-block;
-}
-#welcomeDiv .welcomeSec1 {
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-}
-#welcomeDiv .welcomeSec1 .percent {
-  vertical-align: middle;
-  display: inline-block;
-  height: 100%;
-  padding: 1rem 1rem;
-}
-#welcomeDiv .welcomeSec1 h3 {
-  font-size: 1.5em;
-  width: 50%;
-  padding: 0.5em;
-  margin-right: 140px;
-  margin-left: -40px;
-}
-#welcomeDiv .welcomeSec1 svg {
-  width: 45px;
-  float: right;
-  margin-bottom: -190px;
-  margin-top: 3.8rem;
-  transform: rotate(0deg);
-  display: block;
+#figmaElement4 {
+  margin-top: -5px; /* Adjust this value as needed */
 }
 
-#welcomeDiv .welcomeSec2 {
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-}
-#welcomeDiv .welcomeSec2 .percent {
-  vertical-align: middle;
-  display: inline-block;
-  height: 100%;
-  padding: 1rem 1rem;
-}
-#welcomeDiv .welcomeSec2 #hammer1 {
-  width: 35px;
-  display: block;
-  float: left;
-  padding-top: 2rem;
-  padding-left: -1rem;
-  padding-bottom: -50px;
-  padding-right: 2.5em;
-  transform: rotate(0deg);
-  display: block;
-}
-#welcomeDiv .welcomeSec2 #hammer2 {
-  width: 35px;
-  float: right;
-  padding-top: 40px;
-  transform: rotate(0deg);
-  padding-right: 10px;
-  padding-bottom: 50px;
-}
-#welcomeDiv .welcomeSec2 h3 {
-  display: flex;
-  width: 170px;
-  padding: 2.5em;
-  margin-right: 40px;
-  margin-top: -25px;
-  font-size: 20px;
-}
-
-#welcomeDiv .welcomeSec3 h3 {
-  margin-left: 100px;
-  font-size: 30px;
-}
-
-#welcomeDiv .welcomeSec3 #inAndOut {
-  margin-left: 150px;
-  font-size: 30px;
-}
-
-#footer #figmaElement {
-  margin-bottom: -30px;
-  right: 0;
-  left: 0;
-  display: block;
-}
-#footer #figmaElement img {
+#figmaElement img {
   padding: 0;
   margin: 0;
 }
@@ -368,8 +358,4 @@ svg {
   padding: 2em;
   margin-bottom: -5.3rem;
   position: relative;
-}
-
-#figmaElement4 {
-  margin-top: -5px;
 }/*# sourceMappingURL=main.css.map */
